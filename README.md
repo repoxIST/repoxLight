@@ -1,4 +1,4 @@
-REPOX Light
+#REPOX Light
 
 1 - To configure REPOX some parameters must be set on the "configurations.properties" file under "repox-core\src\main\resources":
 
