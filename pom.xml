@@ -15,6 +15,10 @@
         <name>Instituto Superior Técnico</name>
         <url>http://www.ist.utl.pt</url>
     </organization>
+	
+	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <modules>
         <module>repox-core</module>
@@ -28,4 +32,19 @@
             <url>http://digmap3.ist.utl.pt:8080/artifactory/libs-release-local</url>
         </repository>
     </repositories>
+	
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
